@@ -1,7 +1,7 @@
 <?php
 
-$db_host = "localhost";
-$db_user = "devopscilsy";
+$db_host = "bp-aris.ca0sqavdbb3h.ap-southeast-1.rds.amazonaws.com";
+$db_user = "aris";
 $db_pass = "1234567890";
 $db_name = "dbsosmed";
 
