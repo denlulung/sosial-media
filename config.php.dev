@@ -3,7 +3,7 @@
 $db_host = "db-aris-bigproject.ca0sqavdbb3h.ap-southeast-1.rds.amazonaws.com";
 $db_user = "aris";
 $db_pass = "1234567890";
-$db_name = "sosialmedia";
+$db_name = "dev_sosialmedia";
 
 try {    
     //create PDO connection 
