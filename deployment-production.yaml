@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sosialmedia-production
+  namespace: production
+  labels:
+    app: sosialmedia
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sosialmedia
+  template:
+    metadata:
+      labels:
+        app: sosialmedia
+    spec:
+      containers:
+      - name: sosial-media
+        image: denlulung/sosial-media:BUILD_NUMBER
+        ports:
+        - containerPort: 80
