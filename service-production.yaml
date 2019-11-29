@@ -1,0 +1,14 @@
+kind: Service 
+apiVersion: v1
+metadata:
+  name: sosialmedia-production
+  namespace: production
+spec:
+  selector: 
+    app: sosialmedia
+  ports: 
+  - protocol: TCP 
+    port: 80
+    targetPort: 80 
+    nodePort: 30091
+  type: LoadBalancer
