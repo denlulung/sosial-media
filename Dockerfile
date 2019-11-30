@@ -11,7 +11,7 @@ RUN \
 
 WORKDIR /var/www/localhost/htdocs/
 
-RUN git clone https://github.com/denlulung/sosial-media.git
+RUN git clone -b master https://github.com/denlulung/sosial-media.git
 RUN mv /var/www/localhost/htdocs/sosial-media/* /var/www/localhost/htdocs/
 RUN rm -rf index.html /var/www/localhost/htdocs/sosial-media
 
