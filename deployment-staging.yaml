@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: sosial-media
-        image: denlulung/sosial-media:latest
+        image: denlulung/sosial-media:BUILD_NUMBER
         ports:
         - containerPort: 80

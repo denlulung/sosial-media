@@ -11,11 +11,11 @@ RUN \
 
 WORKDIR /var/www/localhost/htdocs/
 
-RUN git clone -b master https://github.com/denlulung/sosial-media.git
+RUN git clone -b staging https://github.com/denlulung/sosial-media.git
 RUN mv /var/www/localhost/htdocs/sosial-media/* /var/www/localhost/htdocs/
 RUN rm -rf index.html /var/www/localhost/htdocs/sosial-media
 
-COPY config.php /var/www/localhost/htdocs/config.php
+COPY config.php.dev /var/www/localhost/htdocs/config.php
 
 EXPOSE 80
 
